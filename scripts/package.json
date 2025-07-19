@@ -1,0 +1,102 @@
+{
+  "name": "loh-token-polygon",
+  "version": "1.0.0",
+  "description": "LOH Token Project - 이재명 대통령 1시간 = 국민 51,169,148명",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network hardhat",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "deploy:polygon": "hardhat run scripts/deploy.js --network polygon",
+    "verify:mumbai": "hardhat verify --network mumbai",
+    "verify:polygon": "hardhat verify --network polygon",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "size": "hardhat size-contracts",
+    "gas": "REPORT_GAS=true hardhat test",
+    "coverage": "hardhat coverage",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix",
+    "prettier": "prettier --write 'contracts/**/*.sol'",
+    "analyze": "slither ."
+  },
+  "keywords": [
+    "ethereum",
+    "polygon",
+    "blockchain",
+    "smart-contracts",
+    "solidity",
+    "hardhat",
+    "erc20",
+    "nft",
+    "erc721",
+    "loh-token",
+    "이재명",
+    "president",
+    "korea"
+  ],
+  "author": {
+    "name": "YesOkLab",
+    "email": "YesOkLab@gmail.com",
+    "url": "https://github.com/yesoklab"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yesoklab/loh-token-polygon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yesoklab/loh-token-polygon/issues"
+  },
+  "homepage": "https://github.com/yesoklab/loh-token-polygon#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "chai": "^4.2.0",
+    "ethers": "^6.4.0",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.1",
+    "typechain": "^8.3.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "config": {
+    "project": {
+      "name": "LOH Token Project",
+      "symbol": "LOH",
+      "totalSupply": "51169148",
+      "nftCollection": "LJM Clockwork Collection",
+      "maxNFTs": "5800",
+      "deployerAddress": "0x2Cb13fB3743315691b90Aa0B960d08BcF64F56F3"
+    },
+    "networks": {
+      "mumbai": {
+        "chainId": 80001,
+        "name": "Polygon Mumbai Testnet"
+      },
+      "polygon": {
+        "chainId": 137,
+        "name": "Polygon Mainnet"
+      }
+    },
+    "contact": {
+      "telegram": "t.me/YesOkLab_NFT",
+      "github": "https://github.com/yesoklab/loh-token-polygon"
+    }
+  }
+}
