@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/interfaces/IERC20.sol";
 
 /**
  * @title LOH Token - Project LJM Clockwork
- * @dev 이재명 대통령의 1시간 = 대한민국 국민 51,169,148명의 시간
+ * @dev Lee Jae-myung President 1 hour = 51,169,148 Korean citizens time
  * @notice 디지털 유산 아카이빙 프로젝트의 핵심 토큰
  */
 contract LOHToken is ERC20, ERC20Burnable, Pausable, Ownable, ReentrancyGuard {
@@ -107,7 +107,7 @@ contract LOHToken is ERC20, ERC20Burnable, Pausable, Ownable, ReentrancyGuard {
     }
     
     function getKoreanMeaning() public pure returns (string memory) {
-        return "이재명 대통령의 1시간 = 대한민국 국민 51,169,148명의 시간";
+        return "Lee Jae-myung President 1 hour = 51,169,148 Korean citizens time";
     }
     
     // ===== 스왑 기능 =====
